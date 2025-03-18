@@ -19,10 +19,10 @@ export async function GET() {
   };
 
   return rss({
-    title: "潮流周刊",
-    description: "记录工程师 Tw93 的不枯燥生活",
-    site: "https://weekly.tw93.fun/",
-    customData: `<image><url>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</url></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
+    title: "Blogs",
+    description: "记录工程师 ZhouJing 的不枯燥生活",
+    site: "https://zhoujingya.github.io/",
+    customData: `<image><url>https://zhoujingya.github.io/favicon.ico</url></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
     items: await Promise.all(
       posts.map(async (item) => {
         const [issueNumber, issueTitle] = item.url
