@@ -11,3 +11,5 @@
 * [第 4 期 - 宅宅的清明假期](https://weekly-zhoujingyas-projects.vercel.app/posts/04-%E5%AE%85%E5%AE%85%E7%9A%84%E6%B8%85%E6%98%8E%E5%81%87%E6%9C%9F)
 
 * [第 5 期 - 有挑战性的一周](https://weekly-zhoujingyas-projects.vercel.app/posts/05-%E6%9C%89%E6%8C%91%E6%88%98%E6%80%A7%E7%9A%84%E4%B8%80%E5%91%A8)
+
+* [第 5 期 - 2025首半马.md](https://weekly-zhoujingyas-projects.vercel.app/posts/06-2025%E9%A6%96%E5%8D%8A%E9%A9%AC)
