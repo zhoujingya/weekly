@@ -12,4 +12,6 @@
 
 * [第 5 期 - 有挑战性的一周](https://weekly-zhoujingyas-projects.vercel.app/posts/05-%E6%9C%89%E6%8C%91%E6%88%98%E6%80%A7%E7%9A%84%E4%B8%80%E5%91%A8)
 
-* [第 5 期 - 2025首半马.md](https://weekly-zhoujingyas-projects.vercel.app/posts/06-2025%E9%A6%96%E5%8D%8A%E9%A9%AC)
+* [第 6 期 - 2025首半马.md](https://weekly-zhoujingyas-projects.vercel.app/posts/06-2025%E9%A6%96%E5%8D%8A%E9%A9%AC)
+
+* [第 7 期 - 5月小结.md](https://weekly-zhoujingyas-projects.vercel.app/posts/07-%E4%BA%94%E6%9C%88%E5%B0%8F%E7%BB%93)
