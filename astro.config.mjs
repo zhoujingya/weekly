@@ -16,18 +16,6 @@ function formatDate(date) {
 }
 
 function getFileCreateDate(filePath) {
-  try {
-    const { execSync } = require('child_process');
-    const gitCmd = `git log --follow --format=%ad --date=short -- "${filePath}" | tail -1`;
-    const firstCommitDate = execSync(gitCmd, { encoding: 'utf8' }).trim();
-
-    if (firstCommitDate) {
-      return formatDate(new Date(firstCommitDate));
-    }
-  } catch (error) {
-    console.error(`Error getting Git commit date: ${error.message}`);
-  }
-
   const stats = fs.statSync(filePath);
   return formatDate(stats.mtime);
 }
@@ -46,11 +34,14 @@ function defaultLayoutPlugin() {
   return function (tree, file) {
     const filePath = file.history[0];
     const { frontmatter } = file.data.astro;
+
     frontmatter.layout = "@layouts/post.astro";
 
     if (tree.children[0]?.value && !frontmatter.image) {
       const imageElement = parse(tree.children[0].value).querySelector("img");
-      frontmatter.image = imageElement.getAttribute("src");
+      if (imageElement) {
+        frontmatter.image = imageElement.getAttribute("src");
+      }
     }
 
     if (tree.children[1]?.children[1]?.value) {
