@@ -15,3 +15,5 @@
 * [第 6 期 - 2025首半马.md](https://weekly-zhoujingyas-projects.vercel.app/posts/06-2025%E9%A6%96%E5%8D%8A%E9%A9%AC)
 
 * [第 7 期 - 5月小结.md](https://weekly-zhoujingyas-projects.vercel.app/posts/07-%E4%BA%94%E6%9C%88%E5%B0%8F%E7%BB%93)
+
+* [第 8 期 - 思考人生.md](https://weekly-zhoujingyas-projects.vercel.app/posts/08-%E6%80%9D%E8%80%83%E4%BA%BA%E7%94%9F)
