@@ -16,7 +16,20 @@ function formatDate(date) {
 }
 
 function getFileCreateDate(filePath) {
-  return formatDate(fs.statSync(filePath).birthtime);
+  try {
+    const { execSync } = require('child_process');
+    const gitCmd = `git log --follow --format=%ad --date=short -- "${filePath}" | tail -1`;
+    const firstCommitDate = execSync(gitCmd, { encoding: 'utf8' }).trim();
+
+    if (firstCommitDate) {
+      return formatDate(new Date(firstCommitDate));
+    }
+  } catch (error) {
+    console.error(`Error getting Git commit date: ${error.message}`);
+  }
+
+  const stats = fs.statSync(filePath);
+  return formatDate(stats.mtime);
 }
 
 function getWeeklyDate(num) {
