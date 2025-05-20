@@ -49,7 +49,6 @@ function defaultLayoutPlugin() {
     }
 
     frontmatter.description = frontmatter.description || SITE.description;
-    frontmatter.image = frontmatter.image || SITE.image;
 
     if (!frontmatter.date) {
       const postNumber = filePath.split("/posts/")[1].split("-")[0];

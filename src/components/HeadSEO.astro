@@ -8,7 +8,7 @@ const {
   icon,
   keywords,
   author,
-  twitterId,
+  githubId,
   homePage,
   title,
   siteImage,
@@ -23,7 +23,7 @@ const {
 } = content;
 
 const pageTitle = contentTitle ? `${title}${contentTitle}` : title;
-const imageSrc = socialImage || siteImage;
+const imageSrc = socialImage || null;
 const description = contentDescription || siteDescription;
 const preloadImage = image
   ? `${image}?x-oss-process=image/resize,w_3600/format,webp`
@@ -31,10 +31,10 @@ const preloadImage = image
 ---
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content={imageSrc} />
+{imageSrc && <meta name="twitter:image" content={imageSrc} />}
 <meta name="twitter:site" content={homePage} />
 <meta property="twitter:url" content={pageURL} />
-<meta name="twitter:creator" content={`@${twitterId}`} />
+<meta name="twitter:creator" content={`@${githubId}`} />
 <meta property="twitter:description" content={description} />
 <meta name="keywords" content={keywords} />
 <meta name="author" content={author} />
